@@ -6,7 +6,7 @@ and using images from Chainguard. The example is using Kind so that it can be ru
 See https://kind.sigs.k8s.io/ for more information about getting Kind installed.
 
 ## Deployment using default images from Istio
-Deploy Kubernetes cluster, istio and sample application using ...sh.
+Deploy Kubernetes cluster, istio and sample application using [default-helm-create.sh](default-helm-create.sh).
 ```
 $ ./default-helm-create.sh
 Creating cluster "kind" ...
@@ -78,7 +78,7 @@ Deleted nodes: ["kind-control-plane"]
 ```
 
 ## Deployment using images from Chainguard
-Deploy Kubernetes cluster, istio and sample application using ...sh. Modify the following lines in the script to specify exactly what Chainguard images to use:
+Deploy Kubernetes cluster, istio and sample application using [chainguard-helm-create.sh](chainguard-helm-create.sh). Modify the following lines in the script to specify exactly what Chainguard images to use:
 ```
 ISTIO_PILOT="cgr.dev/chainguard/istio-pilot:latest"
 ISTIO_PROXY="cgr.dev/chainguard/istio-proxy:latest"
