@@ -2,7 +2,6 @@ FROM cgr.dev/chainguard/jdk:latest-dev
 
 COPY . /home/build/
 RUN ./mvnw package
-RUN ls -l target
 
 FROM cgr.dev/chainguard/jre:latest
 
